@@ -11,6 +11,12 @@ namespace Задание8
     {
         static void Main(string[] args)
         {
+            DirectoryInfo study = new DirectoryInfo("C:/Game");
+            foreach (DirectoryInfo file in study.GetDirectories())
+            {
+                Console.WriteLine("Название : {0}", file.Name);
+            }
+            Console.ReadLine();
         }
     }
 }
